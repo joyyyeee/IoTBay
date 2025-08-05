@@ -1,34 +1,32 @@
-# IoTBay
+# IoTBay – IoT Device Catalogue Management Module
+
 <!-- 
-This is the web application for IoTBay for R1. 
+This section documents the IoT device management functionality developed for the IoTBay web application (R1 release).
 
-How to deploy:
-- Run target/demo on a server and show in browser. This will display the launch page (index.jsp)
+Module Overview:
+- This module allows staff users to create, update, delete, and search IoT device records.
+- All users (staff and customers) can view and search devices by name and type.
+- The module follows the MVC architecture and connects to a SQLite database via JDBC.
 
-How to run software:
-- On the launch page (index.jsp), select "login", "register", or "continue as guest" to begin using the system
+Key Features:
+1. Create Device (Staff only)
+- Staff can input details such as device name, type, unit price, and stock quantity to add a new IoT device record.
 
-1. Register
-- Enter all fields and click "Register". 
+2. Edit Device (Staff only)
+- Staff can select an existing device and update any of its details.
 
-2. Login
-- Enter valid credentials stored in the database and click login. 
-(eg. Admin = "admin@gmail.com" and "password123")
-(eg. Staff = "staff@gmail.com" and "password123")
-(eg. customer = "customer@gmail.com" and "password123")
+3. Delete Device (Staff only)
+- Staff can delete existing device records from the catalogue.
 
-- Once logging in/registering, the welcome.jsp page will show, reflecting login success. Click "Continue" button to progress to dashboard
+4. Search and List Devices (All users)
+- Both staff and customer users can search for devices by name or type.
+- Device records are displayed in a list format after applying filters.
 
-3. View/Edit/Delete Account details
-- Click "View Profile" in dashboard 
-- Make any changes to the already saved information and click "Save Changes"
-- Click "Delete account" to remove the current account
-- Return to dashboard by clicking "Save Changes" or the logo in top left
+Technology Stack:
+- Java, JSP/Servlets, JDBC, SQLite, MVC Architecture
+- GitHub used for version control and collaboration
 
-4. View access logs
-- Click "View Profile" in dashboard 
-- View access logs to the right of the page. Select a date and click "Filter" to show logs from that one date.
-
-5. Logout
-- Click logout to end session and return to launch page
+Notes:
+- This module is integrated into the main IoTBay system via the dashboard.
+- Role-based access control ensures only staff users can perform write operations on the database.
 -->
