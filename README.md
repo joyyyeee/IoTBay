@@ -1,5 +1,7 @@
 # IoTBay – IoT Device Catalogue Management Module
 
+> **Implemented by Jiayu Dai** – I built this IoT Device Catalogue module as my individual feature in a team project, including: CRUD, role-based access control, fuzzy search, JDBC persistence, and JUnit testing.
+
 <!-- 
 This section documents the IoT device management functionality developed for the IoTBay web application (R1 release).
 
